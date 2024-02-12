@@ -41,13 +41,6 @@ let Stat = document.getElementById('Stat'); // 노가다 목장갑 스탯
 
 function BGMplay() { // 배경음악 재생
 
-    BGM1.pause();
-    BGM2.pause();
-    BGM3.pause();
-    BGM4.pause();
-    BGM5.pause();
-    BGM6.pause();
-
     if (BGMNum == 0) {
         BGMNum += 1;
         BGM.textContent = '리스항구';
