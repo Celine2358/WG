@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="WorkGloves.png"> <!--사이트 아이콘-->
+    <title>공노목 시뮬레이터</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="WorkGloves.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="Headline">
+        <div id="BGM" onclick="BGMplay()"> <!--사이트 BGM-->
+            BGM
+            <audio id="BGM1" loop autoplay><source src="AboveTheTreetops.mp3" type="audio/mp3"></audio>
+            <audio id="BGM2" loop autoplay><source src="FloralLife.mp3" type="audio/mp3"></audio>
+            <audio id="BGM3" loop autoplay><source src="Nightmare.mp3" type="audio/mp3"></audio>
+            <audio id="BGM4" loop autoplay><source src="BadGuys.mp3" type="audio/mp3"></audio>
+            <audio id="BGM5" loop autoplay><source src="WhenTheMorningComes.mp3" type="audio/mp3"></audio>
+            <audio id="BGM6" loop autoplay><source src="SleepyWood.mp3" type="audio/mp3"></audio>
+        </div>
+        <div id="Title">
+            노가다 목장갑 강화
+        </div>
+        <div id="Celine" onclick="CelineLink()"> <!--셀리느 문의 링크-->
+            <img src="CelineIcon.gif" alt="셀리느">
+        </div>
+    </div>
+    <div class="GloveUI">
+        <div id="Scroll">
+            <table>
+                <thead>
+                    <tr>
+                        <th onclick="Scroll100()">
+                            <img src="S100.png" alt="장공100%">
+                            <img id="ToolTip" src="S100Tool.png">
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td onclick="Scroll60()">
+                            <img src="S60.png" alt="장공60%">
+                            <img id="ToolTip" src="S60Tool.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td onclick="Scroll10()">
+                            <img src="S10.png" alt="장공10%">
+                            <img id="ToolTip" src="S10Tool.png">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="WorkGlove"> <!--노가다 목장갑 UI-->
+            <div id="Name">노가다 목장갑</div>
+            <div style="display: flex">
+                <div id="ItemImg">
+                    <img src="WorkGloves.png" alt="노목">
+                </div>
+                <div id="Success"> <!--주문서 성공 이펙트-->
+                    <img src="Success.gif">
+                    <audio id="Sound1"><source src="EnchantSuccess.mp3" type="audio/mp3"></audio>
+                </div>
+                <div id="Fail"> <!--주문서 실패 이펙트-->
+                    <img src="Fail.gif">
+                    <audio id="Sound2"><source src="EnchantFailure.mp3" type="audio/mp3"></audio>
+                </div>
+                <div id="REQ">
+                    REQ LEV : 10<br>
+                    REQ STR : 0<br>
+                    REQ DEX : 0<br>
+                    REQ INT : 0<br>
+                    REQ LUK : 0<br>
+                    REQ POP : -
+                </div>
+            </div>
+            <div id="Job">
+                초보자 전사 마법사 궁수 도적
+            </div>
+            <div id="Stat">
+                장비분류 : 장갑<br>
+                물리방어력 : +2<br>
+                업그레이드 가능 횟수 : 5
+            </div>
+        </div>
+    </div>
+    <div id="Msg">
+        <div id="Show">주문서로 <span style="font-weight: bold">노가다 목장갑</span>을 강화하세요!</div>
+        <button onclick="Reset()">Reset</button>
+    </div>
+    <div id="Thank">(다른 장갑 주문서는 추후에 추가하겠습니다. 감사합니다!)</div>
+</body>
+<script src="WorkGloves.js">
+</script>
+</html>

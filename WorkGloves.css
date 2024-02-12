@@ -1,0 +1,181 @@
+/* 글꼴 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #202020;
+}
+
+.Headline { /* 상단 */
+    color: white;
+    margin-top: 12px;
+    display: flex;
+}
+
+#Title { /* 제목 */
+    border: 2px solid white;
+    width: 278px; height: 40px;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 12px;
+    box-shadow: 0 0 7px black;
+}
+
+#Celine { /* 셀리느 아이콘 */
+    margin-top: 1.5px;
+    cursor: pointer;
+}
+
+#BGM { /* BGM 박스 */
+    border: 2px solid white;
+    width: 84px; height: 30px;
+    margin-top: 1.5px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.GloveUI { /* 노가다 목장갑 UI div */
+    display: flex;
+    margin-top: 30px;
+}
+
+#Scroll { /* 장갑 공격력 주문서 */
+    margin-left: 21%;
+}
+@media (max-width: 440px) {
+    #Scroll { /* 모바일 */
+        margin-left: 0%;
+    }
+}
+table { /* 장갑 공격력 주문서 Table */
+    border-collapse: collapse;
+}
+
+th, td {
+    width: 51px; height: 44.2px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px white;
+    text-align: center;
+    padding-top: 3px;
+    cursor: pointer;
+}
+
+/* 주문서 툴팁 */
+#ToolTip {
+    display: none;
+    position: absolute;
+}
+th:hover #ToolTip,
+td:hover #ToolTip {
+    display: block;
+}
+
+/* 노가다 목장갑 UI */
+#WorkGlove {
+    border: 2px solid white;
+    background-color: #4B507A;
+    color: white;
+    width: 322px; height: 310px;
+    margin-left: 16.4%;
+}
+@media (max-width: 440px) {
+    #WorkGlove { /* 모바일 */
+        margin-left: 1%;
+        width: 81%;
+    }
+}
+
+#Name {
+    margin-top: 1%;
+    font-size: 135%;
+    text-align: center;
+}
+#ItemImg {
+    background-color: #E0E0E0;
+    width: 108px; height: 111px;
+    margin-top: 5%; margin-left: 6%;
+}
+#ItemImg img { /* 노가다 목장갑 이미지 */
+    width: 81px; height: 75px;
+    margin-top: 17%; margin-left: 10%;
+}
+#REQ { /* 필요 스탯 */
+    margin: 12px 0px 0px 25px;
+    font-size: 13px;
+}
+#Job { /* 착용 가능 직업 */
+    border-bottom: 2px solid white;
+    margin: 7px 0px 0px 4px;
+    width: 97%; height: 30px;
+    text-align: center;
+    word-spacing: 20px; /* 글자 간격 */
+}
+@media (max-width: 440px) {
+    #Job { /* 모바일 */
+        word-spacing: 15px; /* 글자 간격 */
+    }
+}
+#Stat { /* 아이템 스탯 */
+    margin-top: 5%;
+    text-align: center;
+}
+#Success { /* 성공 이펙트 */
+    display: none;
+    position: absolute;
+    width: 164px; height: 189px;
+}
+#Fail { /* 실패 이펙트 */
+    display: none;
+    position: absolute;
+    width: 109px; height: 149px;
+    margin-top: 2%;
+    margin-left: 1%;
+}
+
+/* 메세지 알림창 */
+#Msg {
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    width: 510px; height: 44px;
+    position: absolute;
+    left: 35%;
+    margin-top: 25px;
+    line-height: 42px;
+    padding-left: 1%;
+}
+#Msg button {
+    font-family: 'Noto Sans KR', sans-serif;
+    position: absolute;
+    width: 60px; height: 30px;
+    top: 15%;
+    left: 88%;
+}
+@media (max-width: 440px) {
+    #Msg { /* 모바일 */
+        left: 0%;
+        width: 98%;
+        font-size: 90%;
+    }
+    #Msg button {
+        left: 84%;
+    }
+}
+
+#Thank {
+    color: white;
+    position: absolute;
+    margin-top: 110px;
+    left: 39%;
+}
+@media (max-width: 440px) {
+    #Thank { /* 모바일 */
+        left: 1%;
+        font-size: 85%;
+    }
+}
